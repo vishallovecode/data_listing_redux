@@ -68,32 +68,11 @@ const Products = (props) => {
                 </CustomSelect>
             </div>
      
-      {selctedContcats.length > 0 ? (
-        <button
-          className="btn btn-danger mb-3"
-          onClick={() => dispatch(deleteAllProduct())}
-        >
-          delete all
-        </button>
-      ) : null}
+    
       <table id="dtBasicExample" className="table shadow table table-striped table-bordered table-sm">
         <thead>
           <tr>
-            <th>
-              <div className="custom-control custom-checkbox">
-                <input
-                  id="selectAll"
-                  type="checkbox"
-                  className="custom-control-input"
-                  value={selectAll}
-                  onClick={() => setSelectAll(!selectAll)}
-                />
-                <label
-                  htmlFor="selectAll"
-                  className="custom-control-label"
-                ></label>
-              </div>
-            </th>
+            
             <th>Name</th>
             <th  >Price</th>
             <th  >Quantity</th>
